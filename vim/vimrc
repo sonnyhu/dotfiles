@@ -15,7 +15,6 @@ Plugin 'gmarik/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
-Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'klen/python-mode'
@@ -24,16 +23,16 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'chase/vim-ansible-yaml'
 Plugin 'vim-scripts/taglist.vim'
-Plugin 'dag/vim2hs'
-Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'begriffs/haskell-vim-now'
+Plugin 'szw/vim-tags'
+Plugin 'stephpy/vim-yaml'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
-"filetype plugin on
+filetype plugin on
 "
 " Brief help
 " :PluginList       - lists configured plugins
@@ -59,7 +58,7 @@ set directory=~/.vim/tmp//,/tmp
 
 syntax enable
 colorscheme molokai
-set guifont=Monaco:h10
+set guifont=Monaco:h13
 highlight Search guibg=grey guifg=blue
 
 " Easier split navigations
@@ -88,9 +87,12 @@ let g:pymode_rope = 0
 
 "Linting
 let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
-" Auto check on save
-let g:pymode_lint_write = 1
+let g:pymode_lint_checker = ["pyflakes", "pep8"]
+let g:pymode_lint_on_fly = 0
+let g:pymode_lint_signs = 1
+let g:pymode_lint_message = 1
+let g:pymode_lint_cwindow = 0
+let g:pymode_lint_ignore = "W391"
 
 " Support virtualenv
 let g:pymode_virtualenv = 1
@@ -99,8 +101,8 @@ let g:pymode_virtualenv = 1
 let g:pymode_breakpoint = 1
 let g:pymode_breakpoint_key = '<leader>b'
 
-" Disable color column
 let g:pymode_options_colorcolumn = 0
+let g:pymode_options_max_line_length = 200
 
 " syntax highlighting
 let g:pymode_syntax = 1
@@ -110,8 +112,6 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
-let g:pymode_lint_on_write = 0
-let g:pymode_lint_on_fly = 0
 
 "" pymodel_rope
 "let g:pymode_rope_project_root = "~/.vim/"
