@@ -52,6 +52,7 @@ set expandtab
 set autochdir
 set hlsearch
 set lines=999 columns=999
+set encoding=utf-8
 " Set the directory of the swap file
 " The // indicates that the swap name should be globally unique
 set directory=~/.vim/tmp//,/tmp
@@ -85,15 +86,6 @@ set splitright
 " ]M            Jump on next class or method (normal, visual, operator modes)
 let g:pymode_rope = 0
 
-"Linting
-let g:pymode_lint = 1
-let g:pymode_lint_checker = ["pyflakes", "pep8"]
-let g:pymode_lint_on_fly = 0
-let g:pymode_lint_signs = 1
-let g:pymode_lint_message = 1
-let g:pymode_lint_cwindow = 0
-let g:pymode_lint_ignore = "W391"
-
 " Support virtualenv
 let g:pymode_virtualenv = 1
 
@@ -121,7 +113,7 @@ set completeopt=menu
 
 let g:vim_markdown_folding_disabled=1
 let g:pymode_syntax_space_errors = 0
-let g:pymode_trim_whitespaces = 0
+let g:pymode_trim_whitespaces = 1
 
 
 " Fix for indentation in vim-ruby
