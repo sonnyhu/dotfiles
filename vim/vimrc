@@ -53,13 +53,14 @@ set expandtab
 set autochdir
 set hlsearch
 set lines=999 columns=999
+set encoding=utf-8
 " Set the directory of the swap file
 " The // indicates that the swap name should be globally unique
 set directory=~/.vim/tmp//,/tmp
 
 syntax enable
 colorscheme molokai
-set guifont=Monaco:h10
+set guifont=Monaco:h12
 highlight Search guibg=grey guifg=blue
 
 " Easier split navigations
@@ -86,12 +87,6 @@ set splitright
 " ]M            Jump on next class or method (normal, visual, operator modes)
 let g:pymode_rope = 0
 
-"Linting
-let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
-" Auto check on save
-let g:pymode_lint_write = 1
-
 " Support virtualenv
 let g:pymode_virtualenv = 1
 
@@ -110,8 +105,6 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
-let g:pymode_lint_on_write = 0
-let g:pymode_lint_on_fly = 0
 
 "" pymodel_rope
 "let g:pymode_rope_project_root = "~/.vim/"
