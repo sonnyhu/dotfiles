@@ -27,6 +27,7 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'begriffs/haskell-vim-now'
 Plugin 'szw/vim-tags'
 Plugin 'stephpy/vim-yaml'
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,6 +54,8 @@ set autochdir
 set hlsearch
 set lines=999 columns=999
 set encoding=utf-8
+set wildmenu
+set wildmode=list:longest
 " Set the directory of the swap file
 " The // indicates that the swap name should be globally unique
 set directory=~/.vim/tmp//,/tmp
@@ -89,6 +92,7 @@ let g:pymode_rope = 0
 " Support virtualenv
 let g:pymode_virtualenv = 1
 
+let g:pymode_lint = 0
 " Enable breakpoints plugin
 let g:pymode_breakpoint = 1
 let g:pymode_breakpoint_key = '<leader>b'
