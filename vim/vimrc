@@ -25,11 +25,11 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'begriffs/haskell-vim-now'
-Plugin 'szw/vim-tags'
 Plugin 'mileszs/ack.vim'
 Plugin 'bling/vim-airline'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-dispatch'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -142,8 +142,10 @@ set laststatus=2
 let g:vim_tags_ctags_binary="/usr/local/bin/ctags"
 set autochdir
 set tags=tags;
-let g:vim_tags_use_vim_dispatch = 1
-let g:vim_tags_auto_generate = 1
 
 " ctrlp
-let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_working_path_mode='ra'
+
+" YouCompleteMe
+let g:ycm_auto_trigger = 0
+let g:ycm_key_invoke_completion = "<S-SPACE>"
