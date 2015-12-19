@@ -59,6 +59,9 @@ set encoding=utf-8
 set wildmenu
 set wildmode=list:longest
 set hidden
+" Remap leader
+nnoremap <SPACE> <Nop>
+let mapleader = "\<Space>"
 " Set the directory of the swap file
 " The // indicates that the swap name should be globally unique
 set directory=~/.vim/tmp//,/tmp
@@ -149,3 +152,4 @@ let g:ctrlp_working_path_mode='ra'
 " YouCompleteMe
 let g:ycm_auto_trigger = 0
 let g:ycm_key_invoke_completion = "<S-SPACE>"
+nnoremap <leader>g :YcmCompleter GoTo<CR>
