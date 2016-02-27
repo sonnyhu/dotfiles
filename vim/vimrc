@@ -60,6 +60,7 @@ set encoding=utf-8
 set wildmenu
 set wildmode=list:longest
 set hidden
+set cino+=(0
 " Remap leader
 nnoremap <SPACE> <Nop>
 let mapleader = "\<Space>"
