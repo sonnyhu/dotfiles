@@ -30,6 +30,7 @@ Plugin 'bling/vim-airline'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'ternjs/tern_for_vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,7 +69,7 @@ set directory=~/.vim/tmp//,/tmp
 
 syntax enable
 colorscheme molokai
-set guifont=Monaco:h13
+set guifont=Monaco:h12
 highlight Search guibg=grey guifg=blue
 
 " Easier split navigations
@@ -96,7 +97,7 @@ set splitright
 let g:pymode_rope = 0
 
 " Support virtualenv
-let g:pymode_virtualenv = 1
+let g:pymode_virtualenv = 0
 
 let g:pymode_lint = 0
 " Enable breakpoints plugin
@@ -148,6 +149,7 @@ set tags=tags;
 
 " ctrlp
 let g:ctrlp_working_path_mode='ra'
+let g:ycm_python_binary_path = '/usr/bin/python'
 
 " YouCompleteMe
 let g:ycm_auto_trigger = 0
