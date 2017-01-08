@@ -154,11 +154,11 @@ set tags=tags;
 
 " ctrlp
 let g:ctrlp_working_path_mode='ra'
-let g:ycm_python_binary_path = '/usr/bin/python'
 
 " YouCompleteMe
+let g:ycm_python_binary_path = '/usr/bin/python'
 let g:ycm_auto_trigger = 0
 let g:ycm_key_invoke_completion = "<S-SPACE>"
-let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py" 
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 
