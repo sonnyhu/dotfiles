@@ -72,7 +72,7 @@ set directory=~/.vim/swp//
 
 syntax enable
 colorscheme molokai
-set guifont=Monaco:h12
+set guifont=Monaco:h11
 highlight Search guibg=grey guifg=blue
 
 " Easier split navigations
@@ -157,7 +157,9 @@ let g:ctrlp_working_path_mode='ra'
 let g:ycm_python_binary_path = '/usr/local/bin/python'
 
 " YouCompleteMe
+let g:ycm_python_binary_path = '/usr/local/bin/python'
 let g:ycm_auto_trigger = 0
 let g:ycm_key_invoke_completion = "<S-SPACE>"
+let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 nnoremap <leader>g :YcmCompleter GoTo<CR>
 
