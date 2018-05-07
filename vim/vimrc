@@ -16,11 +16,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'plasticboy/vim-markdown'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'klen/python-mode'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'pangloss/vim-javascript'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-scripts/taglist.vim'
@@ -31,6 +28,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'ternjs/tern_for_vim'
+Plugin 'tpope/vim-sleuth'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,7 +70,7 @@ set directory=~/.vim/swp//
 
 syntax enable
 colorscheme molokai
-set guifont=Monaco:h11
+set guifont=Monaco:h12
 highlight Search guibg=grey guifg=blue
 
 " Easier split navigations
@@ -165,3 +163,4 @@ nnoremap <leader>g :YcmCompleter GoTo<CR>
 
 
 imap jk <Esc>
+
